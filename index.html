@@ -7,11 +7,23 @@
     <title>Document</title>
 
 </head>
+<script>
+
+    function color() {
+        const title = document.getElementById("title");
+        title.textContent = "Java";
+        alert(title.textContent)
+    }
+
+    const button = document.getElementById("changeText");
+    button.addEventListener("click", color);
+
+</script>
 
 <body>
-    <h1>Hello Javascript</h1>
-    <button id="child">click us</button>
-    <button id="parent">click me</button>
+    <h1 id="title">Hello, DOM!</h1>
+    <p class="text">This is a paragraph.</p>
+    <button id="changeText" onclick="color()">Change Text</button>
 
 
     <script src="Javascript.js"></script>
