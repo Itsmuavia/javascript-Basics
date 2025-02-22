@@ -8,22 +8,57 @@
 </head>
 
 <body>
-    <h1 id="title">Hello, DOM!</h1>
+    <!-- <h1 id="title">Hello, DOM!</h1>
     <p class="text">This is a paragraph.</p>
-    <button id="changeText">Change Text</button>
+    <button id="changeText">Change Text</button> -->
+
+
+    <!-- <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul> -->
 
     <script>
-        function color() {
-            const title = document.getElementById("title");
-            title.textContent = "JAVASCRIPT"
-            title.style.backgroundColor = "lightgreen"; 
-            title.style.color = "blue";
-            title.style.fontFamily="Arial, Helvetica, sans-serif"
-            alert(title.textContent); 
-        }
+        // //USING DOM
+        // /// create 
 
-        const button = document.getElementById("changeText");
-        button.addEventListener("click", color);
+
+
+        // const newItem = document.createElement('li');
+        // newItem.textContent = 'Item 3';
+
+        // //Get
+
+
+        // const list = document.getElementById('list');
+        // list.appendChild(newItem);
+
+
+        // //remove 
+
+
+        // // const remove=list.firstElementChild;
+        // // list.removeChild(newItem)
+
+
+        // //update
+        // const second = list.children[1];
+        // const replace = document.createElement('li');
+        // replace.textContent = "New item";
+        // list.replaceChild(replace, second)
+
+
+        // function color() {
+        //     const title = document.getElementById("title");
+        //     title.textContent = "JAVASCRIPT"
+        //     title.style.backgroundColor = "lightgreen";
+        //     title.style.color = "blue";
+        //     title.style.fontFamily="Arial, Helvetica, sans-serif"
+        //     alert(title.textContent);
+        // }
+
+        // const button = document.getElementById("changeText");
+        // button.addEventListener("click", color);
 
     </script>
 </body>
