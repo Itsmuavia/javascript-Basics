@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
-<script>
-
-    function color() {
-        const title = document.getElementById("title");
-        title.textContent = "Java";
-        alert(title.textContent)
-    }
-
-    const button = document.getElementById("changeText");
-    button.addEventListener("click", color);
-
-</script>
 
 <body>
     <h1 id="title">Hello, DOM!</h1>
     <p class="text">This is a paragraph.</p>
-    <button id="changeText" onclick="color()">Change Text</button>
+    <button id="changeText">Change Text</button>
 
+    <script>
+        function color() {
+            const title = document.getElementById("title");
+            title.textContent = "JAVASCRIPT"
+            title.style.backgroundColor = "lightgreen"; 
+            title.style.color = "blue";
+            title.style.fontFamily="Arial, Helvetica, sans-serif"
+            alert(title.textContent); 
+        }
 
-    <script src="Javascript.js"></script>
+        const button = document.getElementById("changeText");
+        button.addEventListener("click", color);
+
+    </script>
 </body>
+<script src="Javascript.js"></script>
 
 </html>
